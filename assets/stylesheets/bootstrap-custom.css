@@ -8788,7 +8788,11 @@ button.close {
     display: none !important;
   }
 }
-/* line 58, ../sass/bootstrap-custom.scss */
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+/* line 5, ../sass/_custom.scss */
 body {
-  background: #000;
+  padding-bottom: 40px;
+  color: #5a5a5a;
 }
