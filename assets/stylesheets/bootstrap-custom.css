@@ -8796,3 +8796,114 @@ body {
   padding-bottom: 40px;
   color: #5a5a5a;
 }
+
+/* NAVBAR STYLES
+-------------------------------------------------- */
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+/* line 16, ../sass/_custom.scss */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+  /* Flip around the padding for proper display in narrow viewports */
+}
+/* line 24, ../sass/_custom.scss */
+.navbar-wrapper .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 29, ../sass/_custom.scss */
+.navbar-wrapper .navbar {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* line 33, ../sass/_custom.scss */
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+/* CAROUSEL
+-------------------------------------------------- */
+/* Carousel base class */
+/* line 45, ../sass/_custom.scss */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+  /* set carousel items height */
+  /* set background for slides */
+}
+/* line 50, ../sass/_custom.scss */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+  /* carousel item bg image style */
+  /* position carousel caption */
+}
+/* line 55, ../sass/_custom.scss */
+.carousel .item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+/* line 64, ../sass/_custom.scss */
+.carousel .item .carousel-caption {
+  z-index: 10;
+}
+/* line 70, ../sass/_custom.scss */
+.carousel .carousel-slide-one {
+  background-image: url("http://www.seriouswheels.com/pics-2015/bc/2015-Bugatti-Vision-Gran-Turismo-Studio-1-1920x1200.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+/* line 75, ../sass/_custom.scss */
+.carousel .carousel-slide-two {
+  background-image: url("http://www.seriouswheels.com/pics-2015/bc/2015-Bugatti-Vision-Gran-Turismo-Interior-4-1920x1200.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+/* line 80, ../sass/_custom.scss */
+.carousel .carousel-slide-three {
+  background-image: url("http://www.seriouswheels.com/pics-2015/bc/2015-Bugatti-Vision-Gran-Turismo-Construction-6-1920x1200.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* RESPONSIVE STYLES
+-------------------------------------------------- */
+@media (min-width: 768px) {
+  /* RESPONSIVE STYLES
+     - NAVBAR
+  -------------------------------------------------- */
+  /* Navbar positioning */
+  /* line 99, ../sass/_custom.scss */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  /* line 102, ../sass/_custom.scss */
+  .navbar-wrapper .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 107, ../sass/_custom.scss */
+  .navbar-wrapper .navbar {
+    padding-left: 0px;
+    padding-right: 0px;
+    /* The navbar becomes detached from the top, so we round the corners */
+    border-radius: 4px;
+  }
+
+  /* RESPONSIVE STYLES
+     - CAROUSEL
+  -------------------------------------------------- */
+  /* Increase size of carousel content */
+  /* line 121, ../sass/_custom.scss */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+}
