@@ -9,6 +9,8 @@
 
     <!-- Bootstrap -->
     <link href="assets/stylesheets/bootstrap-custom.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link href="assets/stylesheets/custom.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -137,10 +139,22 @@
     <!-- Wrap the rest of the page in another container to center all the content. -->
     <div class="container marketing">
 
+      <!-- Secondary page nav
+      ======================================= -->
+      <nav class="navbar navbar-default secondaryPageNav" data-position="staticNav">
+        <div class="container-fluid">
+         <ul class="nav navbar-nav">
+           <li><a href="#firstFeaturette">First</a></li>
+           <li><a href="#secondFeaturette">Second</a></li>
+           <li><a href="#thirdFeaturette">Third</a></li>
+         </ul>
+        </div>
+      </nav>
+
       <!-- Featurette
       ======================================= -->
       <!-- Feature -->
-      <div class="row featurette">
+      <div class="row featurette topFeaturette" id="firstFeaturette">
         <div class="col-md-7">
           <h2 class="featurette-heading">First Heading.<span class="text-muted">It'll blow your mind.</span></h2>
           <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
@@ -154,7 +168,7 @@
       <hr class="featurette-divider">
 
       <!-- Feature -->
-      <div class="row featurette">
+      <div class="row featurette" id="secondFeaturette">
         <div class="col-md-7 col-md-push-5">
           <h2 class="featurette-heading">It's that good.<span class="text-muted">Check it out.</span></h2>
           <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
@@ -168,7 +182,7 @@
       <hr class="featurette-divider">
 
       <!-- Feature -->
-      <div class="row featurette">
+      <div class="row featurette" id="thirdFeaturette">
         <div class="col-md-7">
           <h2 class="featurette-heading">And lastly, this one.<span class="text-muted">Last but not least.</span></h2>
           <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
@@ -186,7 +200,7 @@
       <!-- Footer
       ======================================= -->
       <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
+        <!--<p class="pull-right"><a href="#">Back to top</a></p>-->
         <p>&copy; 2016 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
 
@@ -194,9 +208,21 @@
 
 
 
+    <!-- Back to top
+    ======================================= -->
+    <div id="backToTop" data-visibility="hideMe">
+      <a class="backToTop-control" href="#">
+        <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+        <span class="sr-only">Back To Top</span>
+      </a>
+    </div>
+
+
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="assets/javascripts/bootstrap.min.js"></script>
+    <script src="assets/javascripts/custom.js"></script>
   </body>
 </html>

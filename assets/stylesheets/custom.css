@@ -1,0 +1,248 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+/* line 5, ../sass/custom.scss */
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+}
+
+/* NAVBAR STYLES
+-------------------------------------------------- */
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+/* line 16, ../sass/custom.scss */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+  /* Flip around the padding for proper display in narrow viewports */
+}
+/* line 24, ../sass/custom.scss */
+.navbar-wrapper .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 29, ../sass/custom.scss */
+.navbar-wrapper .navbar {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* line 33, ../sass/custom.scss */
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+/* CAROUSEL
+-------------------------------------------------- */
+/* Carousel base class */
+/* line 45, ../sass/custom.scss */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+  /* set carousel items height */
+  /* set background for slides */
+}
+/* line 50, ../sass/custom.scss */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+  /* carousel item bg image style */
+  /* position carousel caption */
+}
+/* line 55, ../sass/custom.scss */
+.carousel .item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+/* line 64, ../sass/custom.scss */
+.carousel .item .carousel-caption {
+  z-index: 10;
+}
+/* line 70, ../sass/custom.scss */
+.carousel .carousel-slide-one {
+  background-image: url("http://www.seriouswheels.com/pics-2015/bc/2015-Bugatti-Vision-Gran-Turismo-Studio-1-1920x1200.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+/* line 75, ../sass/custom.scss */
+.carousel .carousel-slide-two {
+  background-image: url("http://www.seriouswheels.com/pics-2015/bc/2015-Bugatti-Vision-Gran-Turismo-Interior-4-1920x1200.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+/* line 80, ../sass/custom.scss */
+.carousel .carousel-slide-three {
+  background-image: url("http://www.seriouswheels.com/pics-2015/bc/2015-Bugatti-Vision-Gran-Turismo-Construction-6-1920x1200.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* SECONDARY PAGE NAV
+-------------------------------------------------- */
+/* line 91, ../sass/custom.scss */
+.secondaryPageNav {
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #e7e7e7;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.9);
+  margin-bottom: 50px;
+}
+/* line 99, ../sass/custom.scss */
+.secondaryPageNav .container-fluid {
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 106, ../sass/custom.scss */
+.secondaryPageNav .navbar-nav li {
+  float: left;
+}
+/* line 111, ../sass/custom.scss */
+.secondaryPageNav[data-position="staticNav"] {
+  position: static;
+}
+/* line 114, ../sass/custom.scss */
+.secondaryPageNav[data-position="fixedNav"] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 30;
+  width: 100%;
+}
+/* line 121, ../sass/custom.scss */
+.secondaryPageNav[data-position="fixedNav"] .container-fluid {
+  padding: 0 15px;
+}
+
+/* FEATURETTE
+-------------------------------------------------- */
+/* Space out featurettes */
+/* line 133, ../sass/custom.scss */
+.featurette-divider {
+  margin: 80px 0;
+}
+
+/* Thin out marketing headings */
+/* line 138, ../sass/custom.scss */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+/* BACK TO TOP BUTTON
+-------------------------------------------------- */
+/* line 148, ../sass/custom.scss */
+#backToTop {
+  position: fixed;
+  right: 20px;
+  background: #fff;
+  padding: 8px 10px;
+  border-radius: 6px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all 1s ease;
+}
+/* line 157, ../sass/custom.scss */
+#backToTop .backToTop-control {
+  font-size: 30px;
+  line-height: 1;
+}
+/* line 162, ../sass/custom.scss */
+#backToTop[data-visibility="showMe"] {
+  bottom: 20px;
+}
+/* line 165, ../sass/custom.scss */
+#backToTop[data-visibility="hideMe"] {
+  bottom: -100px;
+}
+
+/* RESPONSIVE STYLES - MIN-WIDTH: 768PX
+-------------------------------------------------- */
+@media (min-width: 768px) {
+  /* RESPONSIVE STYLES
+     - NAVBAR
+  ------------------ */
+  /* Navbar positioning */
+  /* line 182, ../sass/custom.scss */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  /* line 185, ../sass/custom.scss */
+  .navbar-wrapper .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 190, ../sass/custom.scss */
+  .navbar-wrapper .navbar {
+    padding-left: 0px;
+    padding-right: 0px;
+    /* The navbar becomes detached from the top, so we round the corners */
+    border-radius: 4px;
+  }
+
+  /* RESPONSIVE STYLES
+     - CAROUSEL
+  ------------------ */
+  /* Increase size of carousel content */
+  /* line 204, ../sass/custom.scss */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  /* RESPONSIVE STYLES
+     - SECONDARY NAV
+  ------------------ */
+  /* line 214, ../sass/custom.scss */
+  .secondaryPageNav[data-position="fixedNav"] .container-fluid {
+    width: 750px;
+  }
+
+  /* RESPONSIVE STYLES
+     - FEATURETTE
+  ------------------ */
+  /* line 223, ../sass/custom.scss */
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+/*** /@media (min-width: 768px) { */
+/* RESPONSIVE STYLES - MIN-WIDTH: 992PX
+-------------------------------------------------- */
+@media (min-width: 992px) {
+  /* RESPONSIVE STYLES
+     - SECONDARY NAV
+  ------------------ */
+  /* line 240, ../sass/custom.scss */
+  .secondaryPageNav[data-position="fixedNav"] .container-fluid {
+    width: 970px;
+  }
+
+  /* RESPONSIVE STYLES
+     - FEATURETTE
+  ------------------ */
+  /* line 249, ../sass/custom.scss */
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+/*** /@media (min-width: 992px) { */
+/* RESPONSIVE STYLES - MIN-WIDTH: 1200PX
+-------------------------------------------------- */
+@media (min-width: 1200PX) {
+  /* RESPONSIVE STYLES
+     - SECONDARY NAV
+  ------------------ */
+  /* line 266, ../sass/custom.scss */
+  .secondaryPageNav[data-position="fixedNav"] .container-fluid {
+    width: 1170px;
+  }
+}
+/*** /@media (min-width: 1200PX) { */
