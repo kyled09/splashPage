@@ -8872,23 +8872,39 @@ body {
   background-position: 50% 50%;
 }
 
-/* RESPONSIVE STYLES
+/* FEATURETTE
+-------------------------------------------------- */
+/* Space out featurettes */
+/* line 93, ../sass/_custom.scss */
+.featurette-divider {
+  margin: 80px 0;
+}
+
+/* Thin out marketing headings */
+/* line 98, ../sass/_custom.scss */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+/* RESPONSIVE STYLES - MIN-WIDTH: 768PX
 -------------------------------------------------- */
 @media (min-width: 768px) {
   /* RESPONSIVE STYLES
      - NAVBAR
-  -------------------------------------------------- */
+  ------------------ */
   /* Navbar positioning */
-  /* line 99, ../sass/_custom.scss */
+  /* line 116, ../sass/_custom.scss */
   .navbar-wrapper {
     margin-top: 20px;
   }
-  /* line 102, ../sass/_custom.scss */
+  /* line 119, ../sass/_custom.scss */
   .navbar-wrapper .container {
     padding-left: 15px;
     padding-right: 15px;
   }
-  /* line 107, ../sass/_custom.scss */
+  /* line 124, ../sass/_custom.scss */
   .navbar-wrapper .navbar {
     padding-left: 0px;
     padding-right: 0px;
@@ -8898,12 +8914,33 @@ body {
 
   /* RESPONSIVE STYLES
      - CAROUSEL
-  -------------------------------------------------- */
+  ------------------ */
   /* Increase size of carousel content */
-  /* line 121, ../sass/_custom.scss */
+  /* line 138, ../sass/_custom.scss */
   .carousel-caption p {
     margin-bottom: 20px;
     font-size: 21px;
     line-height: 1.4;
   }
+
+  /* RESPONSIVE STYLES
+     - FEATURETTE
+  ------------------ */
+  /* line 148, ../sass/_custom.scss */
+  .featurette-heading {
+    font-size: 50px;
+  }
 }
+/*** /@media (min-width: 768px) { */
+/* RESPONSIVE STYLES - MIN-WIDTH: 992PX
+-------------------------------------------------- */
+@media (min-width: 992px) {
+  /* RESPONSIVE STYLES
+     - FEATURETTE
+  ------------------ */
+  /* line 165, ../sass/_custom.scss */
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+/*** /@media (min-width: 992px) { */
