@@ -7,7 +7,12 @@ var logTools = {
   // logs text to console
   logMsg : function(logMessage) {
     console.log(logMessage);
-  }
+  }, 
+
+  // text for various messages
+  textInitLoad : "dude, JS works",
+  textWindowLoad : "teh window is loaded",
+  textScrolling : "they see me scrolling..."
 
 };
 
@@ -77,20 +82,20 @@ var pageTools = {
 
   // check if our JS was loaded
   // on initial page load
-  logTools.logMsg("dude, JS works");
+  logTools.logMsg(logTools.textInitLoad);
 
   // once the window has loaded, 
   // these functions can be performed
   $(window).load(function() {
     // show message window is loaded
-    logTools.logMsg("teh window is loaded");
+    logTools.logMsg(logTools.textWindowLoad);
   });
 
   // if the window is scrolling
   // run these functions
   $(window).scroll(function() {
     // show scrolling message
-    logTools.logMsg("they see me scrolling...");
+    logTools.logMsg(logTools.textScrolling);
 
     // show/hide back to top button
     pageTools.showBackToTop();
