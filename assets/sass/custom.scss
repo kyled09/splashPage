@@ -141,6 +141,14 @@ body {
 	letter-spacing: -1px;
 }
 
+/* padding for sticky menu */
+.row.topFeaturette {
+	padding-top: 0px;
+}
+.row.topFeaturette.hasPadding {
+	padding-top: 100px;
+}
+
 
 
 /* CONTACT US

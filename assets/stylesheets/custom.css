@@ -136,11 +136,22 @@ body {
   letter-spacing: -1px;
 }
 
+/* padding for sticky menu */
+/* line 145, ../sass/custom.scss */
+.row.topFeaturette {
+  padding-top: 0px;
+}
+
+/* line 148, ../sass/custom.scss */
+.row.topFeaturette.hasPadding {
+  padding-top: 100px;
+}
+
 /* CONTACT US
 -------------------------------------------------- */
 /* BACK TO TOP BUTTON
 -------------------------------------------------- */
-/* line 154, ../sass/custom.scss */
+/* line 162, ../sass/custom.scss */
 #backToTop {
   position: fixed;
   right: 20px;
@@ -150,16 +161,16 @@ body {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   transition: all 1s ease;
 }
-/* line 163, ../sass/custom.scss */
+/* line 171, ../sass/custom.scss */
 #backToTop .backToTop-control {
   font-size: 30px;
   line-height: 1;
 }
-/* line 168, ../sass/custom.scss */
+/* line 176, ../sass/custom.scss */
 #backToTop[data-visibility="showMe"] {
   bottom: 20px;
 }
-/* line 171, ../sass/custom.scss */
+/* line 179, ../sass/custom.scss */
 #backToTop[data-visibility="hideMe"] {
   bottom: -100px;
 }
@@ -171,16 +182,16 @@ body {
      - NAVBAR
   ------------------ */
   /* Navbar positioning */
-  /* line 188, ../sass/custom.scss */
+  /* line 196, ../sass/custom.scss */
   .navbar-wrapper {
     margin-top: 20px;
   }
-  /* line 191, ../sass/custom.scss */
+  /* line 199, ../sass/custom.scss */
   .navbar-wrapper .container {
     padding-left: 15px;
     padding-right: 15px;
   }
-  /* line 196, ../sass/custom.scss */
+  /* line 204, ../sass/custom.scss */
   .navbar-wrapper .navbar {
     padding-left: 0px;
     padding-right: 0px;
@@ -192,7 +203,7 @@ body {
      - CAROUSEL
   ------------------ */
   /* Increase size of carousel content */
-  /* line 210, ../sass/custom.scss */
+  /* line 218, ../sass/custom.scss */
   .carousel-caption p {
     margin-bottom: 20px;
     font-size: 21px;
@@ -202,7 +213,7 @@ body {
   /* RESPONSIVE STYLES
      - SECONDARY NAV
   ------------------ */
-  /* line 220, ../sass/custom.scss */
+  /* line 228, ../sass/custom.scss */
   .secondaryPageNav[data-position="fixedNav"] .container-fluid {
     width: 750px;
   }
@@ -210,7 +221,7 @@ body {
   /* RESPONSIVE STYLES
      - FEATURETTE
   ------------------ */
-  /* line 229, ../sass/custom.scss */
+  /* line 237, ../sass/custom.scss */
   .featurette-heading {
     font-size: 50px;
   }
@@ -222,7 +233,7 @@ body {
   /* RESPONSIVE STYLES
      - SECONDARY NAV
   ------------------ */
-  /* line 246, ../sass/custom.scss */
+  /* line 254, ../sass/custom.scss */
   .secondaryPageNav[data-position="fixedNav"] .container-fluid {
     width: 970px;
   }
@@ -230,7 +241,7 @@ body {
   /* RESPONSIVE STYLES
      - FEATURETTE
   ------------------ */
-  /* line 255, ../sass/custom.scss */
+  /* line 263, ../sass/custom.scss */
   .featurette-heading {
     margin-top: 120px;
   }
@@ -242,7 +253,7 @@ body {
   /* RESPONSIVE STYLES
      - SECONDARY NAV
   ------------------ */
-  /* line 272, ../sass/custom.scss */
+  /* line 280, ../sass/custom.scss */
   .secondaryPageNav[data-position="fixedNav"] .container-fluid {
     width: 1170px;
   }
