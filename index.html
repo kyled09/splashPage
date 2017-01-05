@@ -86,7 +86,6 @@
 
         <!-- carousel slide -->
         <div class="item carousel-slide-one active">
-          <!--<img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First Slide">-->
           <div class="container">
             <div class="carousel-caption">
               <h1>Example Headline</h1>
@@ -98,7 +97,6 @@
 
         <!-- carousel slide -->
         <div class="item carousel-slide-two">
-          <!--<img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second Slide">-->
           <div class="container">
             <div class="carousel-caption">
               <h1>Second Example Headline</h1>
@@ -110,7 +108,6 @@
 
         <!-- carousel slide -->
         <div class="item carousel-slide-three">
-          <!--<img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third Slide">-->
           <div class="container">
             <div class="carousel-caption">
               <h1>Another One?!</h1>
@@ -227,28 +224,45 @@
 
             <!-- Full Name -->
             <div class="form-group has-feedback">
+              <!-- label -->
               <label for="contactFullName" class="control-label">Full Name</label>
+              <!-- input -->
               <input type="text" class="form-control" id="contactFullName" placeholder="Full Name" aria-describedby="helpBlockFullName" data-error="Please enter your full name" required>
+              <!-- glyphicon -->
+              <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+              <!-- error message -->
               <div id="helpBlockFullName" class="help-block with-errors"></div>
             </div>
 
             <!-- Email Address -->
             <div class="form-group has-feedback">
+              <!-- label -->
               <label for="contactEmailAddress" class="control-label">Email Address</label>
+              <!-- input -->
               <input type="email" class="form-control" id="contactEmailAddress" placeholder="Email Address" aria-describedby="helpBlockEmailAddress" data-error="Please enter your email address" required>
+              <!-- glyphicon -->
+              <span class="glyphicon form-control-feedback"></span>
+              <!-- error message -->
               <div id="helpBlockEmailAddress" class="help-block with-errors"></div>
             </div>
 
             <!-- Contact Number -->
             <div class="form-group has-feedback">
+              <!-- label -->
               <label for="contactContactNumber" class="control-label">Contact Number</label>
-              <input type="text" class="form-control" id="contactContactNumber" placeholder="Contact Number" aria-describedby="helpBlockContactNumber" data-error="Please enter your contact number" required>
+              <!-- input -->
+              <input type="text" class="form-control" id="contactContactNumber" placeholder="Contact Number" aria-describedby="helpBlockContactNumber" data-error="Please enter your contact number" data-minlength="10" required>
+              <!-- glyphicon -->
+              <span class="glyphicon form-control-feedback"></span>
+              <!-- error message -->
               <div id="helpBlockContactNumber" class="help-block with-errors"></div>
             </div>
 
             <!-- Type of Communication -->
             <div class="form-group">
+              <!-- label -->
               <label for="contactMessageType">Message Type</label>
+              <!-- input -->
               <select class="form-control" id="contactMessageType">
                 <option value="general">General Enquiry</option>
                 <option value="support">Support Request</option>
@@ -258,8 +272,13 @@
 
             <!-- Message -->
             <div class="form-group has-feedback">
+              <!-- label -->
               <label for="contactMessage" class="control-label">Your Message</label>
+              <!-- input -->
               <textarea class="form-control" rows="5" id="contactMessage" placeholder="Your message goes here" aria-describedby="helpBlockMessage" data-error="Please enter your message" required></textarea>
+              <!-- glyphicon -->
+              <span class="glyphicon form-control-feedback"></span>
+              <!-- error message -->
               <div id="helpBlockMessage" class="help-block with-errors"></div>
             </div>
 
