@@ -91,7 +91,7 @@
             <div class="carousel-caption">
               <h1>Example Headline</h1>
               <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-              <p><a href="#" class="btn btn-lrg btn-primary" role="button">Sign Up Today</a></p>
+              <p><a href="#" class="btn btn-lrg btn-default" role="button">Sign Up Today</a></p>
             </div>
           </div> <!-- /.container -->
         </div> <!-- /.item -->
@@ -103,7 +103,7 @@
             <div class="carousel-caption">
               <h1>Second Example Headline</h1>
               <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a href="#" class="btn btn-lrg btn-primary" role="button">Learn More</a></p>
+              <p><a href="#" class="btn btn-lrg btn-default" role="button">Learn More</a></p>
             </div>
           </div> <!-- /.container -->
         </div> <!-- /.item -->
@@ -115,7 +115,7 @@
             <div class="carousel-caption">
               <h1>Another One?!</h1>
               <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a href="#" class="btn btn-lrg btn-primary" role="button">Browse</a></p>
+              <p><a href="#" class="btn btn-lrg btn-default" role="button">Browse</a></p>
             </div>
           </div> <!-- /.container -->
         </div> <!-- /.item -->
@@ -195,7 +195,86 @@
       <!-- feature divider -->
       <hr class="featurette-divider">
 
+      <!-- Contact Us
+      ======================================= -->
+      <div class="row contactUs">
 
+        <!-- page header -->
+        <div class="col-md-12 contactUsIntro">
+          <h1>Contact Us</h1>
+          <p class="lead">Get in touch, we'd love to hear from you!</p>
+        </div>
+
+        <!-- contact details -->
+        <div class="col-md-6 contactDetails">
+          <address>
+            <strong>Company Name</strong><BR>
+            27 Street Name,<BR>
+            In a Suburb,<BR>
+            6075
+          </address>
+
+          <address>
+            <strong>e:</strong> <a href="mailto:#">info@companyemail.com</a><BR>
+            <strong>t:</strong> +27 (0) 21 123 9876<BR>
+            <strong>f:</strong> +27 (0) 21 567 4321
+          </address>
+        </div> <!-- /.col-md-6 contactDetails -->
+
+        <!-- contact form -->
+        <div class="col-md-6 contactForm">
+          <form data-toggle="validator" role="form">
+
+            <!-- Full Name -->
+            <div class="form-group has-feedback">
+              <label for="contactFullName" class="control-label">Full Name</label>
+              <input type="text" class="form-control" id="contactFullName" placeholder="Full Name" aria-describedby="helpBlockFullName" data-error="Please enter your full name" required>
+              <div id="helpBlockFullName" class="help-block with-errors"></div>
+            </div>
+
+            <!-- Email Address -->
+            <div class="form-group has-feedback">
+              <label for="contactEmailAddress" class="control-label">Email Address</label>
+              <input type="email" class="form-control" id="contactEmailAddress" placeholder="Email Address" aria-describedby="helpBlockEmailAddress" data-error="Please enter your email address" required>
+              <div id="helpBlockEmailAddress" class="help-block with-errors"></div>
+            </div>
+
+            <!-- Contact Number -->
+            <div class="form-group has-feedback">
+              <label for="contactContactNumber" class="control-label">Contact Number</label>
+              <input type="text" class="form-control" id="contactContactNumber" placeholder="Contact Number" aria-describedby="helpBlockContactNumber" data-error="Please enter your contact number" required>
+              <div id="helpBlockContactNumber" class="help-block with-errors"></div>
+            </div>
+
+            <!-- Type of Communication -->
+            <div class="form-group">
+              <label for="contactMessageType">Message Type</label>
+              <select class="form-control" id="contactMessageType">
+                <option value="general">General Enquiry</option>
+                <option value="support">Support Request</option>
+                <option value="urgent">Urgent Message</option>
+              </select>
+            </div>
+
+            <!-- Message -->
+            <div class="form-group has-feedback">
+              <label for="contactMessage" class="control-label">Your Message</label>
+              <textarea class="form-control" rows="5" id="contactMessage" placeholder="Your message goes here" aria-describedby="helpBlockMessage" data-error="Please enter your message" required></textarea>
+              <div id="helpBlockMessage" class="help-block with-errors"></div>
+            </div>
+
+            <!-- submit button -->
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary">SUBMIT</button>
+            </div>
+
+          </form>
+        </div> <!-- /.row contactUs -->
+
+      </div> <!-- /.row contactUs -->
+
+      <!-- feature divider -->
+      <hr class="featurette-divider">
 
       <!-- Footer
       ======================================= -->
@@ -223,6 +302,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="assets/javascripts/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.8/validator.min.js"></script>
     <script src="assets/javascripts/custom.js"></script>
   </body>
 </html>
